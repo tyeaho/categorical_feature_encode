@@ -4,7 +4,7 @@ As generally known, ML models mostly consist of model-understandable numerical d
 These are 2 steps that can change categorical text data into numerical data
 
 
-step 1) labels-> categorical variables
+step 1) labels-> categorical variables \n
 use: pd.factorize / sklearn.preprocessing.LabelEncoder
 result will have 1-D
 
