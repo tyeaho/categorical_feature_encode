@@ -5,9 +5,9 @@ These are 2 steps that can change categorical text data into numerical data
         
         
 step 1) labels-> categorical variables         
-use: pd.factorize / sklearn.preprocessing.LabelEncoder
-result will have 1-D
-
-step 2) categorical variables
-use: pd.get_dummies/ sklearn.preprocessing.OneHotEncoder
-result will have n-D
+use: pd.factorize / sklearn.preprocessing.LabelEncoder        
+result will have 1-D        
+        
+step 2) categorical variables        
+use: pd.get_dummies/ sklearn.preprocessing.OneHotEncoder        
+result will have n-D        
