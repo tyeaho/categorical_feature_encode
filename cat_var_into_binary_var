@@ -1,0 +1,15 @@
+#categorical variables -> binary variables
+
+import pandas as pd
+
+#using pd.get_dummies()
+df=pd.DataFrame(['A','B','B','C'],columns=['Col'])
+df=pd.get_dummies(df)
+
+#using OneHotEncoder,LabelEncoder
+from sklearn.preprocessing import OneHotEncoder,LabelEncoder
+df=pd.DataFrame(['A','B','B','C'],columns=['Col'])
+le=LabelEncoder()
+df['Col']=le.fit_transform(df['Col'])
+ohe=OneHotEncoder()
+df=pd.DataFrame(ohe.fit_transform(df).toarray())
