@@ -1,12 +1,10 @@
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder
 
 #label encode using factorize()
 df= pd.DataFrame(['A','B','B','C'],columns=['col'])
 df['Fact']=pd.factorize(df['col'])[0]
 
 #label encode using LabelEncoder()
+from sklearn.preprocessing import LabelEncoder
 le=LabelEncoder()
 df['Lab']=le.fit_transform(df['col'])
-
-print(df) 
